@@ -1,0 +1,11 @@
+*** IMPORTANT NOTE ***
+
+This section uses #include <random>, and requires C++11 or later.
+
+
+Here are some examples:
+
+  ./run-mt19937-32.sh myfile-0001
+  ./run-mt19937-64.sh myfile-0002
+
+
