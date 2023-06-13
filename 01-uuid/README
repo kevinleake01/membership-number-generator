@@ -1,18 +1,10 @@
 Generating Membership numbers using UUID.
 
-Here are some examples of generating membership numbers using UUIDs.
+Here are some examples of generating membership numbers using UUIDs:
 
-  ./135-uuidgen.sh myfile-0001 "kevinleake01@20190610t173725z" "kevinleake01@20190610t174311z"
+  ./135-uuidgen.sh myfile-0001 "20230614-182532@kevinleake01" "20230614-182752@kevinleake01"
   ./111-uuidgen.sh myfile-0002
-  ./135-ossp-uuid.sh myfile-0003 "kevinleake01@20190610t190339z" "kevinleake01@20190610t190602z"
+  ./135-ossp-uuid.sh myfile-0003 "20230614-183316@kevinleake01" "20230614-183316@kevinleake01"
   ./444-ossp-uuid.sh myfile-0004
 
 
-UUID links:
-
-http://www.ossp.org/pkg/lib/uuid/
-https://www.uuidgenerator.net/
-https://www.uuidonline.net/
-https://uuidonline.com/
-https://uuidgen.org/
-https://www.famkruithof.net/uuid/uuidgen

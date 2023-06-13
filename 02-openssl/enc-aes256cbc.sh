@@ -1,7 +1,7 @@
 #! /bin/sh
 
 # Example usage:
-# ./enc-aes256cbc.sh numberfile <namespace1> <namespace2> <namespace3> <seed_num4>
+# ./enc-aes256cbc.sh myfile-0001 "20230614-190538@kevinleake01" "20230614-190804@kevinleake01" "20230614-191017@kevinleake01" 100
 
 echo $2 > 00_temp.txt
 openssl enc -aes-256-cbc -base64 -in 00_temp.txt -out $1.txt -pass pass:$3 -iter $4

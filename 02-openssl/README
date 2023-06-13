@@ -2,8 +2,8 @@ Generating Membership numbers using Openssl.
 
 Here are some examples:
 
-  ./enc-aes256cbc.sh myfile-0001 "kevinleake01@20190611t092504z" "kevinleake01@20190611t092638z" "kevinleake01@20190611t092755z" 100
-  ./enc-base64.sh myfile-0002 "kevinleake01@20190611t093447z"
+  ./enc-aes256cbc.sh myfile-0001 "20230614-190538@kevinleake01" "20230614-190804@kevinleake01" "20230614-191017@kevinleake01" 100
+  ./enc-base64.sh myfile-0002 "20230614-191438@kevinleake01"
 
 
 Openssl links:

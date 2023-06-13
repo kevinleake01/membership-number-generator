@@ -1,7 +1,7 @@
 #! /bin/sh
 
 # Example usage:
-# ./444-ossp-uuid.sh numberfile
+# ./444-ossp-uuid.sh myfile-0004
 
 uuid -v4 -n 3 -o $1.txt
 

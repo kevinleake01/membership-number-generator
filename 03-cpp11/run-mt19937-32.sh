@@ -1,7 +1,7 @@
 #! /bin/sh
 
 # Example usage:
-# ./run-mt19937-32.sh numberfile
+# ./run-mt19937-32.sh myfile-0001
 
 g++ mt19937-32.cpp
 ./a.out > $1.txt

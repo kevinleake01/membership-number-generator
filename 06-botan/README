@@ -1,0 +1,7 @@
+Generating Membership numbers using Botan.
+
+Here are some examples:
+
+  ./botan-hex.sh myfile-0001 32
+  ./botan-base64.sh myfile-0002 32
+
