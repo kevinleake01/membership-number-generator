@@ -1,7 +1,7 @@
 #! /bin/sh
 
 # Example usage:
-# ./135-uuidgen myfile-0001 "20230614-182532@kevinleake01" "20230614-182752@kevinleake01"
+# ./135-uuidgen myfile-0001 "20230620-182532@kevinleake01" "20230620-182752@kevinleake01"
 
 uuidgen -t > $1.txt
 uuidgen -m -n 5d02ca0e-0915-11ee-a655-485d603c9b2e -N $2 >> $1.txt

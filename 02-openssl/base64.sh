@@ -1,9 +1,9 @@
 #! /bin/sh
 
 # Example usage:
-# ./botan-hex.sh myfile-0001 32
+# ./base64.sh myfile-0002 "20230620-191438@kevinleake01"
 
-botan rng --format=hex $2 > $1.txt
+printf $2 | base64 > $1.txt
 
 qrencode -8 -o $1-qrencode.png -r $1.txt
 zint -b 58 --eci=26 -o $1-zint.png -i $1.txt

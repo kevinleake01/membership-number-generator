@@ -1,7 +1,7 @@
 #! /bin/sh
 
 # Example usage:
-# ./basenc-base32.sh myfile-0002 "20230614-215737@kevinleake01"
+# ./basenc-base32.sh myfile-0002 "20230622-215737@kevinleake01"
 
 printf $2 | basenc --base32 > $1.txt
 

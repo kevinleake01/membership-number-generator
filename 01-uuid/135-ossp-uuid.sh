@@ -1,7 +1,7 @@
 #! /bin/sh
 
 # Example usage:
-# ./135-ossp-uuid.sh myfile-0003 "20230614-183316@kevinleake01" "20230614-183316@kevinleake01"
+# ./135-ossp-uuid.sh myfile-0003 "20230620-183341@kevinleake01" "20230614-183349@kevinleake01"
 
 uuid -v1 > $1.txt
 uuid -v3 5d02ca0e-0915-11ee-a655-485d603c9b2e $2 >> $1.txt

@@ -1,7 +1,7 @@
 #! /bin/sh
 
 # Example usage:
-# ./botan-base64.sh myfile-0002 32
+# ./rand64.sh myfile-0002 32
 
 botan rng --format=base64 $2 > $1.txt
 

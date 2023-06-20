@@ -2,6 +2,9 @@ Generating Membership numbers using Botan.
 
 Here are some examples:
 
-  ./botan-hex.sh myfile-0001 32
-  ./botan-base64.sh myfile-0002 32
+  ./rand16.sh myfile-0001 32
+  ./rand64.sh myfile-0002 32
+  ./rand58.sh myfile-0003 32
+  ./hash-sha256-64.sh myfile-0004 "20230621-183507@kevinleake01"
+  ./base64.sh myfile-0005 "20230621-190724@kevinleake01"
 

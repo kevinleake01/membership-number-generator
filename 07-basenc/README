@@ -2,8 +2,8 @@ Generating Membership numbers using Basenc.
 
 Here are some examples:
 
-  ./basenc-hex.sh myfile-0001 "20230614-215504@kevinleake01"
-  ./basenc-base32.sh myfile-0002 "20230614-215737@kevinleake01"
-  ./basenc-base32hex.sh myfile-0003 "20230614-220136@kevinleake01"
-  ./basenc-base64url.sh myfile-0004 "20230614-220345@kevinleake01"
+  ./basenc-hex.sh myfile-0001 "20230622-215504@kevinleake01"
+  ./basenc-base32.sh myfile-0002 "20230622-215737@kevinleake01"
+  ./basenc-base32hex.sh myfile-0003 "20230622-220136@kevinleake01"
+  ./basenc-base64url.sh myfile-0004 "20230622-220345@kevinleake01"
 

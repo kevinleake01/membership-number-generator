@@ -1,7 +1,7 @@
 #! /bin/sh
 
 # Example usage:
-# ./basenc-base64url.sh myfile-0004 "20230614-220345@kevinleake01"
+# ./basenc-base64url.sh myfile-0004 "20230622-220345@kevinleake01"
 
 printf $2 | basenc --base64url > $1.txt
 
