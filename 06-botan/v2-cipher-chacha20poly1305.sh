@@ -1,8 +1,8 @@
 #! /bin/sh
 
-printf "\n*** IMPORTANT NOTE ***\n\n"
-printf "This uses Botan v2 encryption, and will not run in Botan v3.\n"
-printf "If you are using Botan v3 or later, please use the v3-ciphers.\n\n"
+# *** IMPORTANT NOTE ***
+# This uses Botan v2 encryption, and will not run in Botan v3.
+# If you are using Botan v3 or later, please use the v3-ciphers.
 
 # Example usage:
 # ./v2-cipher-chacha20poly1305.sh myfile-0001 "20230830-190637@kevinleake01"
