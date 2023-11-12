@@ -5,13 +5,13 @@
 # If you are using Botan v3 or later, please use the v3-ciphers.
 
 # Example usage:
-# ./v2-cipher-chacha20poly1305.sh myfile-0001 "20230830-190637@kevinleake01"
+# ./v2-cipher-aes256-gcm-64.sh myfile-0001 "20231115-163312@kevinleake01"
 
 printf "$2" > 00_temp.txt
 
-botan encryption --mode=chacha20poly1305  \
+botan encryption --mode=aes-256-gcm  \
   --key=000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f  \
-  --iv=000102030405060708090a0b --ad=0001 < 00_temp.txt | basenc --base64url > $1.txt
+  --iv=0001 --ad=0001 < 00_temp.txt | basenc --base64url > $1.txt
 
 rm 00_temp.txt
 

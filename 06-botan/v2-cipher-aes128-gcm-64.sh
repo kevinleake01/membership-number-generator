@@ -5,7 +5,7 @@
 # If you are using Botan v3 or later, please use the v3-ciphers.
 
 # Example usage:
-# ./v2-cipher-aes128-gcm.sh myfile-0001 "20230830-185214@kevinleake01"
+# ./v2-cipher-aes128-gcm-64.sh myfile-0001 "20231115-162208@kevinleake01"
 
 printf "$2" > 00_temp.txt
 

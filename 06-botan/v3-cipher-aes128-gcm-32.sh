@@ -3,13 +3,13 @@
 # NOTE: This requires Botan v3 or later.
 
 # Example usage:
-# ./v3-cipher-aes128-gcm.sh myfile-0001 "20230830-184622@kevinleake01"
+# ./v3-cipher-aes128-gcm-32.sh myfile-0001 "20231115-180641@kevinleake01"
 
 printf "$2" > 00_temp.txt
 
 botan cipher --cipher=AES-128/GCM  \
   --key=000102030405060708090a0b0c0d0e0f  \
-  --nonce=0001 --ad=0001 00_temp.txt | basenc --base64url > $1.txt
+  --nonce=0001 --ad=0001 00_temp.txt | basenc --base32 > $1.txt
 
 rm 00_temp.txt
 
