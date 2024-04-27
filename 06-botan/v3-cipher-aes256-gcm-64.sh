@@ -3,7 +3,7 @@
 # NOTE: This requires Botan v3 or later.
 
 # Example usage:
-# ./v3-cipher-aes256-gcm-64.sh myfile-0001 "20231115-181620@kevinleake01"
+# ./v3-cipher-aes256-gcm-64.sh myfile-0001 "20240429-173210@kevinleake01"
 
 printf "$2" > 00_temp.txt
 

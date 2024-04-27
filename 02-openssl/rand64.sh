@@ -1,7 +1,7 @@
 #! /bin/sh
 
 # Example usage:
-# ./rand64.sh myfile-0003 48
+# ./rand64.sh myfile-0001 48
 
 openssl rand -base64 $2 > $1.txt
 
