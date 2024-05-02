@@ -1,9 +1,9 @@
 /*
------ RAND-0001.GO -----
+----- RAND-0004.GO -----
 
 To run this program:
 
-  go run rand-0001.go > myfile-0001.txt
+  go run rand-0004.go > myfile-0001.txt
 
 Then to use Qrencode:
 
@@ -26,7 +26,7 @@ var randnum int64;
 
 func main() {
 
-  rand.Seed(26);
+  rand.Seed(7922);
 
   for num:=int64(0); num<=32; num++   {
     randnum=random(0, 255);  /* Get the random number */

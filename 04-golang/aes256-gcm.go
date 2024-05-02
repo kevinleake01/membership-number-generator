@@ -30,7 +30,7 @@ func main() {
 
 // Change the data in key and plaintext to suit your needs:
   key, _ := hex.DecodeString("000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f")
-  plaintext := []byte("20231012-1756@kevinleake01")
+  plaintext := []byte("20240503-173218@kevinleake01")
 
   block, err := aes.NewCipher(key)
   if err != nil {

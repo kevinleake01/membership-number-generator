@@ -24,7 +24,7 @@ import (
 func main() {
 
 // Change the data to suit your needs:
-  data := "20231012-1701@kevinleake01"
+  data := "20240503-174407@kevinleake01"
 
   uEnc := b32.StdEncoding.EncodeToString([]byte(data))
   fmt.Println(uEnc)

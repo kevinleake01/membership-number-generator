@@ -1,11 +1,12 @@
 *** IMPORTANT NOTE ***
 
-This section requires C++11 or later.
+This section uses #include <random> from C++11, which means this
+will require C++11 or later.
 
 
 Here are some examples:
 
-  ./run-mt19937-32.sh myfile-0001
-  ./run-mt19937-64.sh myfile-0002
-
-
+  g++ base64url.cpp; ./a.out > myfile0001.txt
+  g++ rand-minstd.cpp; ./a.out 32 100 > myfile0002.txt
+  g++ rand-mt19937-32.cpp; ./a.out 32 100 > myfile0003.txt
+  g++ rand-seedseq-0001.cpp; ./a.out > myfile0004.txt

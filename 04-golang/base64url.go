@@ -24,7 +24,7 @@ import (
 func main() {
 
 // Change the data to suit your needs:
-  data := "20231012-1625@kevinleake01"
+  data := "20240503-175240@kevinleake01"
 
   uEnc := b64.URLEncoding.EncodeToString([]byte(data))
   fmt.Println(uEnc)

@@ -25,7 +25,7 @@ import (
 func main() {
 
 // Change the data in s to suit your needs:
-  s := "20231012-1918@kevinleake01"
+  s := "20240503-180325@kevinleake01"
 
   h := sha256.New()
   h.Write([]byte(s))
