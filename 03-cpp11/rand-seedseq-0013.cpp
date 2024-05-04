@@ -1,13 +1,13 @@
 /*
 ####################################
 #
-# --- RAND-SEEDSEQ-0003.C++ ---
+# --- RAND-SEEDSEQ-0013.C++ ---
 #
 ####################################
 
  Example usage:
 
-    g++ rand-seedseq-0003.cpp; ./a.out > myfile0001.txt
+    g++ rand-seedseq-0013.cpp; ./a.out > myfile0001.txt
 
  Then to use Qrencode or Zint:
 
@@ -27,8 +27,8 @@ int main(int argc, char* argv[])
 {
 
 /* Please change the values in seq{...} and seeds() to suit your needs */
-  std::seed_seq seq{79182, 40731, 66281, 82940, 388610, 44263, 117129};
-  std::vector<std::uint32_t> seeds(8);
+  std::seed_seq seq{900061, 4553, 18172, 41, 26538};
+  std::vector<std::uint32_t> seeds(10);
   seq.generate(seeds.begin(), seeds.end());
 
   for (std::uint32_t n : seeds)

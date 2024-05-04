@@ -10,3 +10,5 @@ Here are some examples:
   g++ rand-minstd.cpp; ./a.out 32 100 > myfile0002.txt
   g++ rand-mt19937-32.cpp; ./a.out 32 100 > myfile0003.txt
   g++ rand-seedseq-0001.cpp; ./a.out > myfile0004.txt
+  g++ string-2-hex-0002.cpp; ./a.out > myfile0005.txt
+

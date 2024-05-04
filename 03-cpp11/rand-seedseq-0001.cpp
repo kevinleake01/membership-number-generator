@@ -26,7 +26,7 @@ using namespace std;
 int main(int argc, char* argv[])
 {
 
-/* Please chane the values in seq{} and seeds() to suit your needs */
+/* Please change the values in seq{...} and seeds() to suit your needs */
   std::seed_seq seq{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
   std::vector<std::uint32_t> seeds(8);
   seq.generate(seeds.begin(), seeds.end());
