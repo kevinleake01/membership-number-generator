@@ -1,7 +1,7 @@
 #! /bin/sh
 
 # Example usage:
-# ./444-uuidgen.sh myfile-0004
+# ./444-uuidgen.sh myfile-0001
 
 uuidgen -r > $1.txt
 uuidgen -r >> $1.txt

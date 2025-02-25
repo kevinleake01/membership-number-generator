@@ -2,9 +2,70 @@ Generating Membership numbers using UUID.
 
 Here are some examples of generating membership numbers using UUIDs:
 
-  ./135-uuidgen.sh myfile-0001 "20230614-182532@kevinleake01" "20230614-182752@kevinleake01"
-  ./111-uuidgen.sh myfile-0002
-  ./135-ossp-uuid.sh myfile-0003 "20230614-183316@kevinleake01" "20230614-183316@kevinleake01"
-  ./444-ossp-uuid.sh myfile-0004
+  ./111-uuidgen.sh myfile-0001
+  ./135-uuidgen.sh myfile-0002
+  ./444-uuidgen.sh myfile-0003
+
+---------------------------------------------------------
+
+NOTE: There are some uuidgen.sh files that use the new RFC-9562 UUIDs that use v6, v7, and v8. This will require
+util-linux 2.41 or later. If you are unlucky, you could try https://github.com/uuidjs/uuid that also supports
+v6 and v7. To install and run, do this:
+
+$ npm install uuid
+$ npx uuid --help
+
+Usage:
+  uuid
+  uuid v1
+  uuid v3 <name> <namespace uuid>
+  uuid v4
+  uuid v5 <name> <namespace uuid>
+  uuid v7
+  uuid --help
+
+Note: <namespace uuid> may be "URL" or "DNS" to use the corresponding UUIDs defined by RFC9562
+
+$ npx uuid v4
+0a888877-3249-46c4-91c1-eedbc0f849b7
+
+$ npx uuid v5 "20250314-132738@kevinleake01" 5d02ca0e-0915-11ee-a655-485d603c9b2e
+06ac0380-c0a8-5fb6-a14d-e968b32c65e8
+---------------------------------------------------------
+
+There is also an alternative to uuid-v8. You can find it at https://github.com/hayageek/uuid-v8
+
+To install and run, do this:
+
+$ npm install uuid-v8
+$ npx uuid-v8
+07e90219-0c10-8824-8312-f1d2911b07c2
+
+$ npx uuid-v8 -n 25
+07e90219-0c12-8f24-82e5-d4d46a22ee29
+07e90219-0c12-8024-82ea-f0ed2ee6f02a
+07e90219-0c12-8e24-82ea-f0045a838f2e
+07e90219-0c12-8524-82ea-d327ef3427eb
+07e90219-0c12-8824-82ea-c1f1871a9e51
+07e90219-0c12-8d24-82eb-a1bf38e38d5e
+07e90219-0c12-8c24-82eb-763480af6eff
+07e90219-0c12-8924-82eb-f17263c98e47
+07e90219-0c12-8a24-82eb-8dc2322ca5b7
+07e90219-0c12-8724-82ec-4a124b2f3c51
+07e90219-0c12-8824-82ec-7e14f8280f9e
+07e90219-0c12-8b24-82ec-7f0973cdb707
+07e90219-0c12-8a24-82ec-b0d59209b33e
+07e90219-0c12-8624-82ec-e2643de7d7ad
+07e90219-0c12-8424-82ed-a69e9b9627f1
+07e90219-0c12-8324-82ed-1cb1b8951365
+07e90219-0c12-8b24-82ed-59b11b39340d
+07e90219-0c12-8f24-82ed-95e2c59a60e9
+07e90219-0c12-8d24-82ed-b98d76f47e4d
+07e90219-0c12-8424-82ed-29fa31cf4c8a
+07e90219-0c12-8924-82ed-9d1222297bcb
+07e90219-0c12-8c24-82ed-24c5e89dbd3e
+07e90219-0c12-8d24-82ed-300df43f7f60
+07e90219-0c12-8024-82ed-5b27fc59afdf
+07e90219-0c12-8f24-82ed-0ce2ca4c4721
 
 
