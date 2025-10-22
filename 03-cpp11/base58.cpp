@@ -5,16 +5,6 @@
 #
 ####################################
 
-Base58 is available as a Python module, and can be installed by
-using Pip with this command:
-
-  pip install base58
-
-Please see:
-  https://pypi.org/project/base58/
-  https://github.com/keis/base58
-
-
  Example usage:
 
     gcc base58.cpp; ./a.out > myfile0001.txt
@@ -31,6 +21,6 @@ Please see:
 int main(int argc, char *argv[])
 {
 // Change the data to suit your needs:
-  std::system("printf \"20231023-193920@kevinleake01\" | base58");
+  std::system("printf \"20251023-193920@kevinleake01\" | basenc --base58");
 }
 

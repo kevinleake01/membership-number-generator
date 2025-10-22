@@ -13,20 +13,13 @@ basenc -d --base64url $1.txt > 00_temp.bin
 
 basenc --base16 00_temp.bin > $1-16.txt
 basenc --base32 00_temp.bin > $1-32.txt
-#base58 00_temp.bin > $1-58.txt
+#basenc --base58 00_temp.bin > $1-58.txt
 botan base58_enc 00_temp.bin > $1-58.txt
 
 rm 00_temp.bin
 
 # ------------------------------
-# Base58 is a python 3 module, and can be installed using:
-#
-#   pip install base58
-#
-# Or you can use Botan, if this is installed.
-#
-# ------------------------------
-# Then to convert to QR Code using Qrencode or Zint for Base16:
+# To convert to QR Code using Qrencode or Zint for Base16:
 #
 #   qrencode -8 -o qr-myfile-0001.png -r myfile0001-16.txt
 #   zint -b 58 --eci=26 -o qr-myfile-0001.png -i myfile0001-16.txt
