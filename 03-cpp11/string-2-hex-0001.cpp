@@ -24,7 +24,7 @@ using namespace std;
 int main(int argc, char* argv[])
 {
 /* Please change this to suit your needs: */
-  char s1[100]="20240504-210427@kevinleake01";
+  char s1[100]="20260214-124201@kevinleake01";
 
   for(unsigned int i=0; i<strlen(s1); i++)
   {

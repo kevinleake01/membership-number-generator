@@ -23,7 +23,7 @@ int main(int argc, char* argv[])
 {
 
 /* Please change this to suit your needs: */
-  std::string str1 = "20240504-213209@kevinleake01";
+  std::string str1 = "20260214-135720@kevinleake01";
 
   for (char character : str1)
   {
